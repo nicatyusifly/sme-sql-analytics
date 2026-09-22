@@ -1,0 +1,4 @@
+# Oracle / IDE əlaqəli fayllar
+*.log
+*.trc
+.DS_Store
