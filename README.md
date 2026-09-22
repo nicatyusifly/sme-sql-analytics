@@ -2,7 +2,7 @@
 
 Kiçik/Orta Sahibkarlıq (SME) biznes kreditləri üzrə bank/maliyyə institutunun portfel analitikası layihəsi. Oracle SQL üzərində aggregate funksiyalar, `GROUP BY`/`HAVING`, window (analytic) funksiyalar, CTE (`WITH ... AS`) və subquery istifadə olunub.
 
-Layihə tamamilə SQL sorğularından ibarətdir (heç bir tətbiq kodu, Python və s. yoxdur).
+Layihə tamamilə SQL sorğularından ibarətdir
 
 ## Ssenari
 
@@ -11,7 +11,7 @@ Kiçik və orta sahibkarlara (SME) biznes krediti verən bir maliyyə institutu 
 - Ümumi kredit portfeli və orta kredit məbləği nə qədərdir?
 - Hansı sahibkar seqmenti (Mikro sahibkar / Kiçik-Orta sahibkar) ən çox kredit alıb?
 - Kreditlər status üzrə (Active / Closed / Overdue / Default) necə bölünür?
-- Aylar üzrə kredit emissiyası necə dəyişir — hansı ay əvvəlkindən çoxdur?
+- Hər kredit mütəxəssisi  üzrə verdiyi kreditlərin sayı və ümumi məbləği?
 - Ən böyük borcalanlar kimlərdir, hər sahibkar seqmentində lider kimdir?
 - Hər kreditin ödənilmiş/qalıq borcu nə qədərdir?
 - Təkrar müraciət edən (birdən çox krediti olan) müştərilər kimlərdir?
@@ -73,4 +73,4 @@ və ya faylları ayrı-ayrılıqda, göstərilən sıra ilə (`schema` → `data
 
 ## Qeyd
 
-Layihə orta səviyyədə saxlanılıb — məqsəd əsas analitik SQL bacarıqlarını (aggregate, group by, window functions, CTE, subquery) real biznes kredit portfeli kontekstində nümayiş etdirməkdir. `MODEL` clause, `PIVOT`/`UNPIVOT`, recursive CTE kimi çox mürəkkəb texnikalar qəsdən istifadə olunmayıb.
+Layihədə məqsəd əsas analitik SQL bacarıqlarını (aggregate, group by, window functions, CTE, subquery) real biznes kredit portfeli kontekstində nümayiş etdirməkdir.
