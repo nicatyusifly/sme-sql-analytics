@@ -63,13 +63,13 @@ Bütün sorğular `queries/03_analytics_queries.sql` faylındadır, bölmələr 
 
 ## İşə salınma qaydası
 
-Oracle mühitində (SQL*Plus, SQLcl və ya SQL Developer):
+Oracle LiveSQL 
 
-```sql
-@run_all.sql
-```
-
-və ya faylları ayrı-ayrılıqda, göstərilən sıra ilə (`schema` → `data` → `queries`) icra edə bilərsiniz.
+livesql.oracle.com ünvanına daxil ol və pulsuz Oracle hesabı ilə qeydiyyatdan keç (mövcud hesabın varsa sadəcə daxil ol).
+Sağ üst küncdən "SQL Worksheet" düyməsinə bas — yeni bir worksheetə açılacaq.
+Əvvəlcə schema/01_create_tables.sql faylının içindəki bütün mətni kopyala, worksheet-ə yapışdır və "Run Script" (▶▶ işarəli düymə, tək "Run" yox) düyməsinə bas — bu, cədvəlləri yaradacaq.
+Sonra data/02_insert_data.sql faylının mətnini worksheet-ə yapışdır və yenə "Run Script" ilə icra et — bu, test datasını daxil edəcək.
+Nəhayət queries/03_analytics_queries.sql faylının mətnini worksheet-ə yapışdır və "Run Script" ilə icra et — bütün analitik sorğuların nəticələri ekranda görünəcək.
 
 ## Qeyd
 
